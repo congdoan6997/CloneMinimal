@@ -15,3 +15,23 @@ npm i - tải node_modules
 npm i prettier  
 npm i eslint-config-airbnb-typescript  
 npm run dev   
+
+git init   
+git status  
+git branch  
+git add README.md   
+git commit -m "#1 feat(readme.md) init project"  
+git log  
+git log --oneline  
+git remote add origin https://github.com/ ... sửa cái link này   
+git push -u origin master  
+git checkout -b dev   
+git push -u origin dev  
+
+
+Pattern: git commit -m "#IssueNumber feat/chore/config/fix (file? or folder?) mess"
+
+feat - tạo cái gì đó mới.   
+chore - sửa cái gì đó.  
+config - setting cái gì đó.  
+fix - sửa lỗi nào rồi.  
