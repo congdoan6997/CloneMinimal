@@ -31,7 +31,28 @@ git push -u origin dev
 
 Pattern: git commit -m "#IssueNumber feat/chore/config/fix (file? or folder?) mess"
 
-feat - tạo cái gì đó mới.   
+feat - tạo cái gì đó mới.  
 chore - sửa cái gì đó.  
 config - setting cái gì đó.  
 fix - sửa lỗi nào rồi.  
+
+- Tạo một pages  
+- Tạo view của page, tạo view trong sections (của page nào thì tạo folder page đấy)  
+- Thêm một router trong file main  
+
+```
+  {
+    element:(<MainLayout>
+      <Suspense fallback={<>Loading</>}>
+          <Outlet />
+        </Suspense>
+    </MainLayout>),
+    children:[],
+  }
+```
+
+dải mainRoutes vào trong useRoutes  
+```
+...mainRoutes,
+```
+
