@@ -2,6 +2,7 @@ import { Suspense, lazy } from 'react';
 import { Outlet } from 'react-router';
 import MainLayout from 'src/layouts/main/layout';
 import AboutPage from 'src/pages/about-us';
+import SettingPage from 'src/pages/setting';
 import FaqsPage from 'src/pages/faqs'
 import ContactPage from 'src/pages/contact-us';
 
@@ -21,11 +22,17 @@ export const mainRoutes = [
         element: <AboutPage />,        
       },
       {
+        path: 'setting',
+        element: <SettingPage />
+      },
+      {
         path: 'faqs',
-        element: <FaqsPage />
+        element: <FaqsPage />,
+      },
+      {
         path: 'contact-us',
         element: <ContactPage />,
-      }
+      },
     ],
   },
 ];

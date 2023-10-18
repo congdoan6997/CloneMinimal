@@ -46,6 +46,10 @@ export default function HomeView() {
             {' '}
             oke
           </Link>
+          <Box sx={{ flexGrow: 1}} />
+          <Link href='/setting' target='_blank' >
+            {' '}
+            Setting
           <Link href="./faqs" target="_blank">
             {' '}
             Faqs
