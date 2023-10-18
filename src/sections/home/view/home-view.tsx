@@ -41,25 +41,26 @@ export default function HomeView() {
           position: 'relative',
         }}
       >
-          <Link href="./about-us" target="_blank">
-            {' '}
-            about us 
-          </Link>
-          <Link href="./docs" target="_blank">
-            {' '}
-            docs 
-          </Link>
-          <Link href='/setting' target='_blank' >
-            {' '}
-            Setting
-          <Link href="./faqs" target="_blank">
-            {' '}
-            Faqs
-          </Link>
-          <Link href="./contact-us" target="_blank">
-            {' '}
-            Contact us
-          </Link>
+        <Link href="./about-us" target="_blank">
+          {' '}
+          about us
+        </Link>
+        <Link href="./docs" target="_blank">
+          {' '}
+          docs
+        </Link>
+        <Link href="/setting" target="_blank">
+          {' '}
+          Setting
+        </Link>
+        <Link href="./faqs" target="_blank">
+          {' '}
+          Faqs
+        </Link>
+        <Link href="./contact-us" target="_blank">
+          {' '}
+          Contact us
+        </Link>
       </Box>
     </>
   );
