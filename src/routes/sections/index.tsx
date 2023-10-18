@@ -6,7 +6,8 @@ import { mainRoutes } from './main';
 export default function SimpleLayout() {
   return useRoutes([{
     path:'/',
-    element: (<MainLayout>
+    element: (
+    <MainLayout>
       <HomePage/>
     </MainLayout>)
   },
