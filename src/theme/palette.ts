@@ -1,4 +1,4 @@
-import { alpha } from "@mui/material/styles";
+import { alpha } from '@mui/material/styles';
 
 export type ColorSchema = 'primary' | 'secondary' | 'info' | 'success' | 'warning' | 'error';
 const GREY = {
@@ -67,7 +67,6 @@ const ERROR = {
   contrastText: '#FFFFFF',
 };
 
-
 const COMMON = {
   common: {
     black: '#000000',
@@ -92,9 +91,8 @@ const COMMON = {
   },
 };
 
-
 export function palette(mode: 'light' | 'dark') {
-  const light ={
+  const light = {
     ...COMMON,
     mode: 'light',
     text: {
@@ -112,7 +110,7 @@ export function palette(mode: 'light' | 'dark') {
       active: GREY[600],
     },
   };
-  const dark ={
+  const dark = {
     ...COMMON,
     mode: 'dark',
     text: {
@@ -130,5 +128,5 @@ export function palette(mode: 'light' | 'dark') {
       active: GREY[500],
     },
   };
-  return mode === 'light'?light:dark;
+  return mode === 'light' ? light : dark;
 }
