@@ -2,6 +2,7 @@ import { Suspense, lazy } from 'react';
 import { Outlet } from 'react-router';
 import MainLayout from 'src/layouts/main/layout';
 import AboutPage from 'src/pages/about-us';
+import DocsPage from 'src/pages/docs';
 export const HomePage = lazy(() => import('src/pages/home'));
 export const mainRoutes = [
   {
@@ -17,6 +18,10 @@ export const mainRoutes = [
         path: 'about-us',
         element: <AboutPage />,
       },
+      {
+        path: 'docs',
+        element: <DocsPage />,
+      },
     ],
-  },
+  } 
 ];

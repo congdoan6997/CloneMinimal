@@ -46,7 +46,16 @@ export default function HomeView() {
             {' '}
             oke
           </Link>
+
         </Box>
+        <Box sx={{ position: 'relative' }}>
+          <Link href="./docs" target="_blank">
+            {' '}
+            oke
+          </Link>
+          
+        </Box>
+        
       </Box>
     </>
   );
