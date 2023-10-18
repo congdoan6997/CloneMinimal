@@ -1,10 +1,14 @@
 import Box from '@mui/material/Box';
 import { useScroll } from 'framer-motion';
+import { Navigate, useNavigate } from 'react-router-dom';
 import ScrollProgress from 'src/components/scroll-progress';
 import { styled } from '@mui/material/styles';
+import Link from '@mui/material/Link';
+
 type StyledPolygonProps = {
   anchor?: 'top' | 'bottom';
 };
+
 const StyledPolygon = styled('div')<StyledPolygonProps>(({ anchor = 'top', theme }) => ({
   left: 0,
   zIndex: 9,
@@ -25,24 +29,25 @@ const StyledPolygon = styled('div')<StyledPolygonProps>(({ anchor = 'top', theme
   }),
 }));
 
-export default function HomeView() { 
+export default function HomeView() {
   const { scrollYProgress } = useScroll();
+
   return (
     <>
-      <ScrollProgress scrollYProgress={ scrollYProgress } />
-      <Box sx={{
+      {/* <ScrollProgress scrollYProgress={ scrollYProgress } /> */}
+      <Box
+        sx={{
           overflow: 'hidden',
           position: 'relative',
-          bgcolor: 'background.default',
-          height: '1000px',
-          width:'1000px'
-        }} >
+        }}
+      >
         <Box sx={{ position: 'relative' }}>
-          <StyledPolygon />
-          <p>Oke</p>
-          <StyledPolygon anchor="bottom" />
+          <Link href="./about-us" target="_blank">
+            {' '}
+            oke
+          </Link>
         </Box>
       </Box>
     </>
-  )
+  );
 }
