@@ -41,12 +41,14 @@ export default function HomeView() {
           position: 'relative',
         }}
       >
-        <Box sx={{ position: 'relative' }}>
           <Link href="./about-us" target="_blank">
             {' '}
-            oke
+            about us 
           </Link>
-          <Box sx={{ flexGrow: 1}} />
+          <Link href="./docs" target="_blank">
+            {' '}
+            docs 
+          </Link>
           <Link href='/setting' target='_blank' >
             {' '}
             Setting
@@ -54,13 +56,10 @@ export default function HomeView() {
             {' '}
             Faqs
           </Link>
-        </Box>
-        <Box sx={{ position: 'relative' }}>
           <Link href="./contact-us" target="_blank">
             {' '}
             Contact us
           </Link>
-        </Box>
       </Box>
     </>
   );
