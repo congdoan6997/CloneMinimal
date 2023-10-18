@@ -50,6 +50,15 @@ export default function HomeView() {
           <Link href='/setting' target='_blank' >
             {' '}
             Setting
+          <Link href="./faqs" target="_blank">
+            {' '}
+            Faqs
+          </Link>
+        </Box>
+        <Box sx={{ position: 'relative' }}>
+          <Link href="./contact-us" target="_blank">
+            {' '}
+            Contact us
           </Link>
         </Box>
       </Box>
