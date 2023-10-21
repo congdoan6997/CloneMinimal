@@ -12,4 +12,18 @@ export const navConfig = [
     icon: <Iconify icon="solar:home-2-broken" />,
     path: paths.components,
   },
+  {
+    title: 'Pages',
+    path: '/pages',
+    icon: <Iconify icon="solar:file-bold-duotone" />,
+    children: [
+      {
+        subheader: 'Other',
+        items: [
+          {title: 'About us', path: '/pages/about-us'},
+          {title: 'Contact us', path: '/pages/contact-us'},
+        ]
+      }
+    ]
+  }
 ];

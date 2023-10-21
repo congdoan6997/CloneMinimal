@@ -8,9 +8,13 @@ import NavDesktop from './nav/desktop';
 import { navConfig } from './config-navigation';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import { useOffsetTop, useResponsive } from 'src/hooks';
+import NavMobile from './nav/mobile/nav-mobile';
+import { HEADER } from '../config-layout';
 
 export default function Header() {
-  // const offsetTop = useOffSetTop(HEADER.H_DESKTOP);
+  const offsetTop = useOffsetTop(HEADER.H_DESKTOP);
+  const mdUp = useResponsive('up', 'md');
   return (
     <AppBar>
       <Toolbar
@@ -27,11 +31,16 @@ export default function Header() {
 
           <Box sx={{ flexGrow: 1 }} />
 
-          <NavDesktop offsetTop={false} data={navConfig} />
+          {mdUp && <NavDesktop offsetTop={offsetTop} data={navConfig} />}
+          
           <Stack alignItems="center" direction={{ xs: 'row', md: 'row-reverse' }}>
-            <Button>Purchase Now</Button>
-            <Button>Login</Button>
-            <Button>Settings</Button>
+            <Button variant="contained">Purchase Now</Button>
+            
+            {mdUp && <Button variant="contained">Login</Button>}
+            
+            <Button variant="contained">Settings</Button>
+            
+            {!mdUp && <NavMobile offsetTop={offsetTop} data={navConfig} />}
           </Stack>
         </Container>
       </Toolbar>
