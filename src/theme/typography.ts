@@ -108,4 +108,4 @@ export const typography = {
     fontSize: pxToRem(14),
     textTransform: 'unset',
   },
-};
+} as const;
