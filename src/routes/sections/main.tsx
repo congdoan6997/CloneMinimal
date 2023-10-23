@@ -4,7 +4,7 @@ import MainLayout from 'src/layouts/main/layout';
 import AboutPage from 'src/pages/about-us';
 import DocsPage from 'src/pages/docs';
 import SettingPage from 'src/pages/setting';
-import FaqsPage from 'src/pages/faqs'
+import FaqsPage from 'src/pages/faqs';
 import ContactPage from 'src/pages/contact-us';
 
 export const HomePage = lazy(() => import('src/pages/home'));
@@ -20,11 +20,11 @@ export const mainRoutes = [
     children: [
       {
         path: 'about-us',
-        element: <AboutPage />,        
+        element: <AboutPage />,
       },
       {
         path: 'setting',
-        element: <SettingPage />
+        element: <SettingPage />,
       },
       {
         path: 'faqs',
@@ -39,5 +39,5 @@ export const mainRoutes = [
         element: <DocsPage />,
       },
     ],
-  } 
+  },
 ];

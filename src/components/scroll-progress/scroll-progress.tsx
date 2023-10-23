@@ -1,5 +1,5 @@
-import Box, { BoxProps } from '@mui/material/Box'
-import { MotionValue, m, useSpring } from 'framer-motion'
+import Box, { BoxProps } from '@mui/material/Box';
+import { MotionValue, m, useSpring } from 'framer-motion';
 
 export interface ScrollProgressProps extends BoxProps {
   color?: 'inherit' | 'primary' | 'secondary' | 'info' | 'success' | 'warning' | 'error';
@@ -8,7 +8,7 @@ export interface ScrollProgressProps extends BoxProps {
 }
 
 export default function ScrollProgress(props: ScrollProgressProps) {
-  const { color = 'primary', size = 3, scrollYProgress, sx, ...other } = props
+  const { color = 'primary', size = 3, scrollYProgress, sx, ...other } = props;
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
@@ -16,8 +16,8 @@ export default function ScrollProgress(props: ScrollProgressProps) {
   });
   return (
     <Box
-      component={ m.div }
-      sx={ {
+      component={m.div}
+      sx={{
         top: 0,
         left: 0,
         right: 0,
@@ -33,5 +33,7 @@ export default function ScrollProgress(props: ScrollProgressProps) {
         ...sx,
       }}
       style={{ scaleX }}
-      {...other}/>)
+      {...other}
+    />
+  );
 }

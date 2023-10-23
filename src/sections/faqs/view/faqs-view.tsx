@@ -1,3 +1,3 @@
-export default function FaqsView(){
+export default function FaqsView() {
   return <>Faqs - View</>;
 }

@@ -1,1 +1,1 @@
-export {default as SettingView} from './setting';
+export { default as SettingView } from './setting';
