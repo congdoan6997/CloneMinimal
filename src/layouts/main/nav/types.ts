@@ -1,3 +1,5 @@
+import { ListItemButtonProps } from '@mui/material/ListItemButton';
+
 export type NavItemProps = {
   title: string;
   path: string;
@@ -10,6 +12,14 @@ export type NavItemProps = {
     }[];
   }[];
 };
+export interface NavItemDesktopProps extends ListItemButtonProps {
+  item: NavItemProps;
+  offsetTop?: boolean;
+  active?: boolean;
+  open?: boolean;
+  subItem?: boolean;
+  externalLink?: boolean;
+}
 export type NavProps = {
   offsetTop: boolean;
   data: NavItemProps[];

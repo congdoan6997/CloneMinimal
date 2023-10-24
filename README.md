@@ -72,3 +72,7 @@ You can switch the direction or spacing values based on the active breakpoint.
 
 Ref: https://mui.com/components/stack/
 
+
+
+
+The double not operator (!!) is simply the ! operator used twice. The first ! converts the operand to its boolean opposite, and the second ! flips it back. The result is a value that is explicitly either true or false.
