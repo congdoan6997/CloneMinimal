@@ -1621,10 +1621,10 @@
   dependencies:
     "is-callable" "^1.1.3"
 
-"framer-motion@^10.16.4":
-  "integrity" "sha512-p9V9nGomS3m6/CALXqv6nFGMuFOxbWsmaOrdmhyQimMIlLl3LC7h7l86wge/Js/8cRu5ktutS/zlzgR7eBOtFA=="
-  "resolved" "https://registry.npmjs.org/framer-motion/-/framer-motion-10.16.4.tgz"
-  "version" "10.16.4"
+"framer-motion@^10.16.2":
+  "integrity" "sha512-aY6L9YMvqMWtfOQptaUvvr8dp97jskXY5UYLQM0vOPxKeERrG/Z034EIQZ/52u7MeCT0HlCQy3/l0HdUZCB9Tw=="
+  "resolved" "https://registry.npmjs.org/framer-motion/-/framer-motion-10.16.2.tgz"
+  "version" "10.16.2"
   dependencies:
     "tslib" "^2.4.0"
   optionalDependencies:

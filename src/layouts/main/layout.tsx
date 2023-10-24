@@ -8,7 +8,7 @@ type Props = {
 
 export default function MainLayout({ children }: Props) {
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', height: 1 }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', height: 1, backgroundColor: 'white' }}>
       {/* TODO: Header */}
       <Header />
 
