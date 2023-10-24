@@ -75,4 +75,7 @@ Ref: https://mui.com/components/stack/
 
 
 
-The double not operator (!!) is simply the ! operator used twice. The first ! converts the operand to its boolean opposite, and the second ! flips it back. The result is a value that is explicitly either true or false.
+The double not operator (!!) is simply the ! operator used twice. The first ! converts the operand to its boolean opposite, and the second ! flips it back. The result is a value that is explicitly either true or false.   
+
+"You can switch from m to motion (in the import and components) and everything works as expected.
+m isn't a 1:1 alias for motion, it's a slimmed-down version. If you want to use animations with the m component you'll need to import an additional "feature package" like domAnimation or domMax." [detail](https://stackoverflow.com/questions/70161785/framer-motion-react-portals-no-transitions-occur)

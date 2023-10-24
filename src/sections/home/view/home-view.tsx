@@ -34,11 +34,12 @@ export default function HomeView() {
 
   return (
     <>
-      {/* <ScrollProgress scrollYProgress={ scrollYProgress } /> */}
+      <ScrollProgress scrollYProgress={scrollYProgress} />
       <Box
         sx={{
           overflow: 'hidden',
           position: 'relative',
+          height: '10000px',
         }}
       >
         <Link href="./about-us" target="_blank">
