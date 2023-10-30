@@ -39,29 +39,11 @@ export default function HomeView() {
         sx={{
           overflow: 'hidden',
           position: 'relative',
-          height: '10000px',
+          bgcolor: 'background.default',
+          height: '1000px',
         }}
       >
-        <Link href="./about-us" target="_blank">
-          {' '}
-          about us
-        </Link>
-        <Link href="./docs" target="_blank">
-          {' '}
-          docs
-        </Link>
-        <Link href="/setting" target="_blank">
-          {' '}
-          Setting
-        </Link>
-        <Link href="./faqs" target="_blank">
-          {' '}
-          Faqs
-        </Link>
-        <Link href="./contact-us" target="_blank">
-          {' '}
-          Contact us
-        </Link>
+        <p>alo</p>
       </Box>
     </>
   );

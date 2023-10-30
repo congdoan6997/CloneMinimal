@@ -7,6 +7,7 @@ export const paths = {
   docs: 'docs',
   about: '/about-us',
   contact: '/contact-us',
+  faqs: '/faqs',
   //external
   changelog: 'https://google.com',
   minimalUI: 'https://google.com',
