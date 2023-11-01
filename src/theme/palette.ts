@@ -1,5 +1,12 @@
 import { alpha } from '@mui/material/styles';
 
+declare module '@mui/material/styles/createPalette' {
+  interface PaletteColor{
+    lighter: string,
+    darker: string
+  }
+}
+
 export type ColorSchema = 'primary' | 'secondary' | 'info' | 'success' | 'warning' | 'error';
 const GREY = {
   0: '#FFFFFF',
