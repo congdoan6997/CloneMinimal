@@ -1,1 +1,1 @@
-export {default as ComingSoonIllustration} from './coming-soon-illustration'
+export { default as ComingSoonIllustration } from './coming-soon-illustration';
