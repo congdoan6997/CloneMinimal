@@ -1,9 +1,9 @@
 import { alpha } from '@mui/material/styles';
 
 declare module '@mui/material/styles/createPalette' {
-  interface PaletteColor{
-    lighter: string,
-    darker: string
+  interface PaletteColor {
+    lighter: string;
+    darker: string;
   }
 }
 

@@ -4,12 +4,14 @@ import MainLayout from 'src/layouts/main/layout';
 import AboutPage from 'src/pages/about-us';
 import DocsPage from 'src/pages/docs';
 import SettingPage from 'src/pages/setting';
-import FaqsPage from 'src/pages/faqs';
-import ContactPage from 'src/pages/contact-us';
+
 import CompactLayout from 'src/layouts/compact';
 
 export const HomePage = lazy(() => import('src/pages/home'));
 const ComingSoonPage = lazy(() => import('src/pages/coming-soon'));
+const ContactPage = lazy(() => import('src/pages/contact-us'));
+const FaqsPage = lazy(() => import('src/pages/faqs'));
+
 export const mainRoutes = [
   {
     element: (
@@ -46,15 +48,15 @@ export const mainRoutes = [
     element: (
       <CompactLayout>
         <Suspense>
-          <Outlet/>
+          <Outlet />
         </Suspense>
       </CompactLayout>
     ),
     children: [
       {
-        path:'coming-soon',
-        element: <ComingSoonPage/>
-      }
+        path: 'coming-soon',
+        element: <ComingSoonPage />,
+      },
     ],
-  }
+  },
 ];

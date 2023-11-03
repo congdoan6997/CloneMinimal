@@ -30,19 +30,23 @@ export default function NavMobile({ offsetTop, data }: NavProps) {
         <SvgColor src="/assets/icons/navbar/ic_menu_item.svg" />
       </IconButton>
 
-      <Drawer PaperProps={{
-        sx: {
-          width:  260
-        }
-      }} open={nav.value} onClose={nav.onFalse}>
-      <>
-      <Logo sx={{mx: 2.5, my: 3}}/>
-      <List component="nav" disablePadding>
-        {data.map((link) => (
-          <p key={link.title}>{link.title}</p>
-        ))}
-      </List>
-      </>
+      <Drawer
+        PaperProps={{
+          sx: {
+            width: 260,
+          },
+        }}
+        open={nav.value}
+        onClose={nav.onFalse}
+      >
+        <>
+          <Logo sx={{ mx: 2.5, my: 3 }} />
+          <List component="nav" disablePadding>
+            {data.map((link) => (
+              <p key={link.title}>{link.title}</p>
+            ))}
+          </List>
+        </>
       </Drawer>
     </>
   );

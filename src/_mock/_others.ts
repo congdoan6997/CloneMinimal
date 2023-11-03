@@ -1,3 +1,5 @@
+import { _mock } from './_mock';
+
 export const _socials = [
   {
     value: 'facebook',
@@ -28,3 +30,10 @@ export const _socials = [
     path: 'https://www.twitter.com/caitlyn.kerluke',
   },
 ];
+
+export const _faqs = [...Array(8)].map((_, index) => ({
+  id: _mock.id(index),
+  value: `panel${index + 1}`,
+  heading: `Questions ${index + 1}`,
+  detail: _mock.description(index),
+}));
