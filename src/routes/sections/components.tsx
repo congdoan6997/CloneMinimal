@@ -4,6 +4,7 @@ import MainLayout from 'src/layouts/main/layout';
 
 //foundation
 const ColorsPage = lazy(() => import('src/pages/components/foundation/colors'));
+const TypographyPage = lazy(() => import('src/pages/components/foundation/typography'));
 export const componentsRoutes = [
   {
     element: (
@@ -24,6 +25,10 @@ export const componentsRoutes = [
               {
                 path: 'colors',
                 element: <ColorsPage />,
+              },
+              {
+                path: 'typography',
+                element: <TypographyPage />,
               },
             ],
           },
