@@ -3,6 +3,7 @@ import { useRoutes } from 'react-router-dom';
 import MainLayout from 'src/layouts/main/layout';
 import HomePage from 'src/pages/home';
 import { mainRoutes } from './main';
+import { componentsRoutes } from './components';
 export default function SimpleLayout() {
   return useRoutes([
     {
@@ -14,5 +15,6 @@ export default function SimpleLayout() {
       ),
     },
     ...mainRoutes,
+    ...componentsRoutes,
   ]);
 }
