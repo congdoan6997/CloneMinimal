@@ -51,7 +51,15 @@ export default function ShadowsView() {
 
           <ComponentBlock title="Colors">
             {colors.map((item, index) => (
-              <CardShadow key={index} title={item} sx={{ boxShadow: theme.customShadows[item], bgcolor : theme.palette[item].main,  color: theme.palette[item].contrastText }} />
+              <CardShadow
+                key={index}
+                title={item}
+                sx={{
+                  boxShadow: theme.customShadows[item],
+                  bgcolor: theme.palette[item].main,
+                  color: theme.palette[item].contrastText,
+                }}
+              />
             ))}
           </ComponentBlock>
         </Stack>
