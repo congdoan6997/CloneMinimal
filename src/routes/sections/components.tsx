@@ -7,6 +7,7 @@ const ColorsPage = lazy(() => import('src/pages/components/foundation/colors'));
 const TypographyPage = lazy(() => import('src/pages/components/foundation/typography'));
 const ShadowsPage = lazy(() => import('src/pages/components/foundation/shadows'));
 const IconsPage = lazy(() => import('src/pages/components/foundation/icons'));
+const GridsPage = lazy(() => import('src/pages/components/foundation/grids'));
 export const componentsRoutes = [
   {
     element: (
@@ -39,6 +40,10 @@ export const componentsRoutes = [
               {
                 path: 'icons',
                 element: <IconsPage />,
+              },
+              {
+                path: 'grids',
+                element: <GridsPage />,
               },
             ],
           },
