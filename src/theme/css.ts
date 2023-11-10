@@ -103,7 +103,9 @@ export function bgBlur(props?: BgBlurProps) {
     backgroundColor: alpha(color, opacity),
   };
 }
+
 //-------------------------------------------------------------------------------------
+
 type BgGradientProps = {
   direction?: string;
   color?: string;
@@ -121,9 +123,8 @@ export function bgGradient(props?: BgGradientProps) {
 
   if (imgUrl) {
     return {
-      background: `linear-gradient(${direction}, ${startColor || color}, ${
-        endColor || color
-      }), url(${imgUrl})`,
+      background: `linear-gradient(${direction}, ${startColor || color}, ${endColor || color}),
+       url(${imgUrl})`,
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center center',
@@ -133,4 +134,6 @@ export function bgGradient(props?: BgGradientProps) {
   return {
     background: `linear-gradient(${direction}, ${startColor}, ${endColor})`,
   };
+
 }
+

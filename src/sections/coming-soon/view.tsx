@@ -1,103 +1,71 @@
-import { Box, Button, IconButton, InputAdornment, Stack, TextField, Typography, alpha, outlinedInputClasses } from "@mui/material";
-import { RouterLink } from "../../routes/components";
-import {  ComingSoonIllustration} from "src/assets/illusstrations";
-import MotionContainer from "src/components/animate/motion-container";
-import { m } from "framer-motion";
-import { _socials } from "src/_mock";
-import Iconify from "src/components/iconify";
-import { useCountdownDate } from "src/hooks";
 
-export default function ViewComingSoon(){
-  const {days, hours, minutes, seconds} = useCountdownDate(new Date("2024-05-26T16:45:30"));
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/system/Box';
+import TextField from '@mui/material/TextField';
+import { Button, IconButton, InputAdornment } from '@mui/material';
+
+import { ComingSoonIllustration } from 'src/assets/illustrations';
+import TimeBlock from './time-block';
+import { useCountdownDate } from 'src/hooks';
+import { _socials } from 'src/_mock';
+import Iconify from 'src/components/iconify';
+import { alpha, bgcolor } from '@mui/system';
+
+export default function ComingSoonView() {
+  const { days, hours, minutes, seconds } = useCountdownDate(new Date('11/05/2023 21:30'));
   return (
-    <MotionContainer>
+    <>
+      <Typography variant="h3" sx={{ mb: 2 }}>
+        Coming Soon!
+      </Typography>
+      <Typography sx={{ color: 'text.secondary' }}>
+        We are current working hard on this page!
+      </Typography>
 
-    <m.div >
-      <Typography variant="h3" sx={{ mb:2 }}>
-      Coming Soon!
-      </Typography >
-    </m.div>
-    <Typography sx={{ color: 'text.secondary' }}>
-    We are currently working hard on this page!
-    </Typography>
+      <ComingSoonIllustration sx={{ my: 10, height: 240 }} />
 
-    <ComingSoonIllustration sx={{height:260, my: {xs: 5, sm: 10 } }} />
+      <Stack
+        direction="row"
+        justifyContent="center"
+        divider={<Box sx={{ mx: { sx: 1, md: 2.5 } }}>:</Box>}
+        sx={{ typography: 'h2' }}
+      >
+        <TimeBlock label="Days" value={days}></TimeBlock>
+        <TimeBlock label="Hours" value={hours}></TimeBlock>
+        <TimeBlock label="Minutes" value={minutes}></TimeBlock>
+        <TimeBlock label="Seconds" value={seconds}></TimeBlock>
+      </Stack>
 
-    <Stack
-    direction="row"
-    justifyContent="center"
-    divider={<Box sx={{ mx: { xs: 1, sm: 2.5 } }}>:</Box>}
-    sx={{ typography: 'h2'}}
-    >
-      <TimeBlock label="Days" value={days} />
-      <TimeBlock label="Hours" value={hours} />
-      <TimeBlock label="Minutes" value={minutes} />
-      <TimeBlock label="Seconds" value={seconds} />
-    </Stack>
-    <TextField
-    fullWidth
-    placeholder="Enter your email"
-    InputProps={{
-      endAdornment:(
-        <InputAdornment position="end">
-          <Button variant="contained" size="large">
-          Notify Me
-          </Button>
-        </InputAdornment>
-      ),
-      sx: {
-        pr: 0.5,
-        [`&.${outlinedInputClasses.focused}`]: {
-          boxShadow: (theme) => theme.customShadows.z20,
-          transition: (theme) =>
-            theme.transitions.create(['box-shadow'], {
-              duration: theme.transitions.duration.shorter,
-            }),
-          [`& .${outlinedInputClasses.notchedOutline}`]: {
-            border: (theme) => `solid 1px ${alpha(theme.palette.grey[500], 0.32)}`,
+      <TextField
+        fullWidth
+        placeholder="Enter your email"
+        InputProps={{
+          endAdornment: (
+            <InputAdornment position="end">
+              <Button variant="contained" size="large">
+                Notify Me
+              </Button>
+            </InputAdornment>
+          ),
+          sx: {
+            pr: 0.5,
           },
-        },
-      },
-    }}
-    sx={{ my: 5 }}
-    />
-    <Stack
-              direction="row"
-              alignItems='center'
-              spacing={1}
-              justifyContent= 'center'
-              
-            >
-              {_socials.map((social) => (
-                <IconButton
-                  key={social.name}
-                  sx={{
-                    '&:hover': {
-                      bgcolor: alpha(social.color, 0.08),
-                    },
-                  }}
-                >
-                  <Iconify color={social.color} icon={social.icon} />
-                </IconButton>
-              ))}
-            </Stack>
-    </MotionContainer>
-  )
-}
-// ----------------------------------------------------------------------------------
+        }}
+        sx={{ my: 5 }}
+      ></TextField>
 
-type TimeBlokProps ={
-  label: string;
-  value: string;
+      <Stack spacing={1} alignItems="center" justifyContent="center" direction="row">
+        {_socials.map((social) => (
+          <IconButton
+            key={social.name}
+            sx={{ color: social.color, '&:hover': { bgcolor: alpha(social.color, 0.08) } }}
+          >
+            <Iconify icon={social.icon} />
+          </IconButton>
+        ))}
+      </Stack>
+    </>
+  );
 }
 
-function TimeBlock({label, value}: TimeBlokProps ){
-  return (
-    <div>
-      <Box> {value}</Box>
-      <Box
-      sx={{ color: 'text.secondary', typography: 'body1'}}
-      > {label}</Box>
-    </div>
-  )
-}
