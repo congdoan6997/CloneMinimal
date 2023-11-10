@@ -6,17 +6,17 @@ import DocsPage from 'src/pages/docs';
 import SettingPage from 'src/pages/setting';
 import FaqsPage from 'src/pages/faqs';
 import ContactPage from 'src/pages/contact-us';
-import ComingSoonPage from 'src/pages/coming-soon';
+//import ComingSoonPage from 'src/pages/coming-soon';
 import MaintenancePage from 'src/pages/maintenance';
-import { Page403, Page404, Page500 } from 'src/pages/Error';
+//import { Page403, Page404, Page500 } from 'src/pages/Error';
 import CompactLayout from 'src/layouts/compact';
 
 
 export const HomePage = lazy(() => import('src/pages/home'));
-// const ComingSoonPage = lazy(() => import('src/pages/coming-soon'));
-// const Page500 = lazy(() => import('src/pages/Error/page500'));
-// const Page403 = lazy(() => import('src/pages/Error/page403'));
-// const Page404 = lazy(() => import('src/pages/Error/page404'));
+const ComingSoonPage = lazy(() => import('src/pages/coming-soon'));
+const Page500 = lazy(() => import('src/pages/Error/page500'));
+const Page403 = lazy(() => import('src/pages/Error/page403'));
+const Page404 = lazy(() => import('src/pages/Error/page404'));
 
 export const mainRoutes = [
   {

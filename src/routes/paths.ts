@@ -3,7 +3,7 @@ const ROOTS = {
 };
 
 export const paths = {
-  components: 'components',
+  components: '/components',
   docs: 'docs',
   about: '/about-us',
   contact: '/contact-us',
