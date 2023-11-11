@@ -1,7 +1,7 @@
-
-
-
-
 export default function AnimateView() {
-  return <><div>AnimateView</div></>
+  return (
+    <>
+      <div>AnimateView</div>
+    </>
+  );
 }

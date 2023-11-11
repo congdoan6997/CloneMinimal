@@ -1,7 +1,7 @@
-
-
 export default function OrganizationalChartView() {
-
-  return <><div>OrganizationalChartView</div></>
-       
-};
+  return (
+    <>
+      <div>OrganizationalChartView</div>
+    </>
+  );
+}

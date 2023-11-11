@@ -1,5 +1,7 @@
-
-
 export default function FormValidationView() {
-  return <><div>FormValidationView</div></>
+  return (
+    <>
+      <div>FormValidationView</div>
+    </>
+  );
 }

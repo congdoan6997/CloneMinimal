@@ -1,9 +1,7 @@
-
-
 export default function ScrollView() {
   return (
     <>
-     <div>ScrollView</div>
+      <div>ScrollView</div>
     </>
   );
 }

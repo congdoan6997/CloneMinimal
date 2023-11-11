@@ -1,4 +1,7 @@
-
 export default function MegaMenuView() {
-  return <><div>MegaMenuView</div></>
+  return (
+    <>
+      <div>MegaMenuView</div>
+    </>
+  );
 }

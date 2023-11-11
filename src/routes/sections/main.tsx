@@ -5,8 +5,6 @@ import AboutPage from 'src/pages/about-us';
 import DocsPage from 'src/pages/docs';
 import SettingPage from 'src/pages/setting';
 
-
-
 import MaintenancePage from 'src/pages/maintenance';
 import CompactLayout from 'src/layouts/compact';
 export const HomePage = lazy(() => import('src/pages/home'));
@@ -16,7 +14,6 @@ const FaqsPage = lazy(() => import('src/pages/faqs'));
 const Page500 = lazy(() => import('src/pages/Error/page500'));
 const Page403 = lazy(() => import('src/pages/Error/page403'));
 const Page404 = lazy(() => import('src/pages/Error/page404'));
-
 
 export const mainRoutes = [
   {
@@ -53,16 +50,13 @@ export const mainRoutes = [
   {
     element: (
       <CompactLayout>
-
         <Suspense fallback={<>Loading</>}>
-
           <Outlet />
         </Suspense>
       </CompactLayout>
     ),
     children: [
       {
-
         path: 'coming-soon',
         element: <ComingSoonPage />,
       },
@@ -81,7 +75,6 @@ export const mainRoutes = [
       {
         path: '404',
         element: <Page404 />,
-
       },
     ],
   },

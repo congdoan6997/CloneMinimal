@@ -1,12 +1,7 @@
-
-
 export default function SnackbarView() {
-  
   return (
     <>
-     <div>
-     SnackbarView
-     </div>
+      <div>SnackbarView</div>
     </>
   );
 }

@@ -1,14 +1,7 @@
-
-
-
 export default function AutocompleteView() {
-  
-
   return (
     <>
-     <div>
-     AutocompleteView
-     </div>
+      <div>AutocompleteView</div>
     </>
   );
 }

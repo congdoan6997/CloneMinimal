@@ -1,4 +1,7 @@
-
 export default function MultiLanguageView() {
-return <><div>MultiLanguageView</div></>
+  return (
+    <>
+      <div>MultiLanguageView</div>
+    </>
+  );
 }

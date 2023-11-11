@@ -7,9 +7,8 @@ export default function ComponentsPage() {
       <Helmet>
         <title>Components</title>
       </Helmet>
-      
+
       <ComponentsView />
     </>
   );
 }
-

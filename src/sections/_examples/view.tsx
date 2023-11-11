@@ -1,14 +1,14 @@
-import { Container, Stack } from "@mui/system";
-import ComponentHero from "./component-hero";
-import { Box, Divider, Link, Typography } from "@mui/material";
-import { BoxProps } from "@mui/material/Box"
-import { extraNav, foundationNav, muiNav } from "./config-navigation";
-import ComponentCard from "./component-card";
+import { Container, Stack } from '@mui/system';
+import ComponentHero from './component-hero';
+import { Box, Divider, Link, Typography } from '@mui/material';
+import { BoxProps } from '@mui/material/Box';
+import { extraNav, foundationNav, muiNav } from './config-navigation';
+import ComponentCard from './component-card';
 
 //----------------------------------------------
-function Grid({children}: BoxProps) {
-  return(
-    <Box 
+function Grid({ children }: BoxProps) {
+  return (
+    <Box
       display="grid"
       gridTemplateColumns={{
         xs: 'repeat(2,1fr)',
@@ -20,107 +20,82 @@ function Grid({children}: BoxProps) {
     >
       {children}
     </Box>
-  )
+  );
 }
 
-
-
 export default function ComponentsView() {
-  
-
   return (
     <>
-     <ComponentHero />
-     <Divider/>
+      <ComponentHero />
+      <Divider />
 
-     <Container sx={{pt:10 , pb: 15}}>
+      <Container sx={{ pt: 10, pb: 15 }}>
+        <Stack spacing={3}>
+          <Stack spacing={1}>
+            <Typography variant="h5">Foundation</Typography>
 
-      <Stack spacing={3}>
-        <Stack spacing={1}>
-          <Typography variant="h5">
-          Foundation
-          </Typography>
+            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+              Colors, Typography, Shadows…
+            </Typography>
+          </Stack>
 
-          <Typography variant="body2" sx={{color: 'text.secondary'}}>
-          Colors, Typography, Shadows…
-          </Typography>
-
+          <Grid>
+            {foundationNav.map((item) => (
+              <ComponentCard key={item.name} item={item} />
+            ))}
+          </Grid>
         </Stack>
 
-        <Grid>
-          {
-            foundationNav.map((item) => (
-              <ComponentCard key={item.name} item={item}/>
-            ))
-          }
-        </Grid>
-      </Stack>
+        <Divider sx={{ borderStyle: 'dashed', my: 8 }} />
 
-      <Divider sx={{ borderStyle: 'dashed', my: 8 }}/>
+        <Stack spacing={3}>
+          <Stack spacing={1}>
+            <Typography variant="h5">MUI</Typography>
 
-      <Stack spacing={3}>
-        <Stack spacing={1}>
-          <Typography variant="h5">
-          MUI
-          </Typography>
-
-          <Typography variant="body2" sx={{color: 'text.secondary'}}>
-          Components from {' '}
-          <Link href="https://mui.com/components/" target="_blank" rel="noopener" >
-          Material UI
-          </Link>
-          .
-          </Typography>
-          <Typography variant="caption" sx={{ color: 'text.secondary' }}>
+            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+              Components from{' '}
+              <Link href="https://mui.com/components/" target="_blank" rel="noopener">
+                Material UI
+              </Link>
+              .
+            </Typography>
+            <Typography variant="caption" sx={{ color: 'text.secondary' }}>
               <i>
                 Some advanced components from MUI X will not be included. So you need to purchase a
-                  separate {' '}
-                  <Link href="https://mui.com/pricing/" target="_blank" rel="noopener">
+                separate{' '}
+                <Link href="https://mui.com/pricing/" target="_blank" rel="noopener">
                   license
-                  </Link>
-                  .
+                </Link>
+                .
               </i>
-          </Typography>
+            </Typography>
+          </Stack>
 
-
+          <Grid>
+            {muiNav.map((item) => (
+              <ComponentCard key={item.name} item={item} />
+            ))}
+          </Grid>
         </Stack>
 
-        <Grid>
-          {
-            muiNav.map((item) => (
-              <ComponentCard key={item.name} item={item}/>
-            ))
-          }
-        </Grid>
-      </Stack>
+        <Divider sx={{ borderStyle: 'dashed', my: 8 }} />
 
-      <Divider sx={{ borderStyle: 'dashed', my: 8 }}/>
+        <Stack spacing={3}>
+          <Stack spacing={1}>
+            <Typography variant="h5">Extra Components</Typography>
 
-      <Stack spacing={3}>
-        <Stack spacing={1}>
-          <Typography variant="h5">
-          Extra Components
-          </Typography>
+            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+              Some custom components / use 3rd party dependencies (chart, map, editor…).
+            </Typography>
+          </Stack>
 
-          <Typography variant="body2" sx={{color: 'text.secondary'}}>
-          Some custom components / use 3rd party dependencies (chart, map, editor…).
-          </Typography>
-
+          <Grid>
+            {extraNav.map((item) => (
+              <ComponentCard key={item.name} item={item} />
+            ))}
+          </Grid>
         </Stack>
-
-        <Grid>
-          {
-            extraNav.map((item) => (
-              <ComponentCard key={item.name} item={item}/>
-            ))
-          }
-        </Grid>
-      </Stack>
-
-     </Container>
-
+      </Container>
     </>
-  
-    )
-  
+  );
 }

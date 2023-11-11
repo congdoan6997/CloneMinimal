@@ -13,12 +13,12 @@ export const paths = {
   minimalUI: 'https://google.com',
 
   //other
-  maintenance:'/maintenance',
-  comingSoon:'/comingSoon',
+  maintenance: '/maintenance',
+  comingSoon: '/comingSoon',
   //error
-  page403:'/403',
+  page403: '/403',
   page404: '/404',
-  page500:'/500',
+  page500: '/500',
 
   //dashboard
   dashboard: {

@@ -1,13 +1,7 @@
-
-
 export default function AccordionView() {
-  
-
   return (
     <>
-      <div>
-      AccordionView
-      </div>
+      <div>AccordionView</div>
     </>
   );
 }

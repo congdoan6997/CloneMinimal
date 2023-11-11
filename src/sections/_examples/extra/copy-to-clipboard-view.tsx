@@ -1,4 +1,7 @@
-
 export default function CopyToClipboardView() {
- return <><div>CopyToClipboardView</div></>
+  return (
+    <>
+      <div>CopyToClipboardView</div>
+    </>
+  );
 }

@@ -1,7 +1,7 @@
-
-
-
-
 export default function NavigationBarView() {
-return <><div>NavigationBarView</div></>
+  return (
+    <>
+      <div>NavigationBarView</div>
+    </>
+  );
 }

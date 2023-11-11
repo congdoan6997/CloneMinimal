@@ -1,11 +1,7 @@
-
-
 export default function TextMaxLineView() {
   return (
     <>
-     <div>
-     TextMaxLineView
-     </div>
+      <div>TextMaxLineView</div>
     </>
   );
 }

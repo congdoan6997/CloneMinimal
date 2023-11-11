@@ -1,12 +1,7 @@
-
-
-
 export default function AlertView() {
   return (
     <>
-      <div>
-      AlertView
-      </div>
+      <div>AlertView</div>
     </>
   );
 }
