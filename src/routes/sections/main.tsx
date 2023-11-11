@@ -57,7 +57,7 @@ export const mainRoutes = [
     ),
     children: [
       {
-        path: 'coming-soon',
+        path: 'comingSoon',
         element: <ComingSoonPage />,
       },
       {
