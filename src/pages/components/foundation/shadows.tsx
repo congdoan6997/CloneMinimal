@@ -1,13 +1,15 @@
 import { Helmet } from 'react-helmet-async';
 import { ShadowsView } from 'src/sections/_examples/foundation';
 
-export default function ColorPages() {
+export default function ShadowsPage() {
   return (
     <>
       <Helmet>
-        <title>Foundation Shadows</title>
+        <title>Foundations: Shadows</title>
       </Helmet>
+      
       <ShadowsView />
     </>
   );
 }
+

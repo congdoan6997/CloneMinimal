@@ -1,3 +1,4 @@
+
 import { Typography } from '@mui/material';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
@@ -131,3 +132,4 @@ function ColorCard({ hexColor, vari }: ColorCardProps) {
     </Stack>
   );
 }
+

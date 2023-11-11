@@ -1,13 +1,15 @@
 import { Helmet } from 'react-helmet-async';
 import { IconsView } from 'src/sections/_examples/foundation';
 
-export default function ColorPages() {
+export default function IconsPage() {
   return (
     <>
       <Helmet>
-        <title>Foundation Colors</title>
+        <title>Foundations: Icons</title>
       </Helmet>
+      
       <IconsView />
     </>
   );
 }
+

@@ -5,12 +5,18 @@ import AboutPage from 'src/pages/about-us';
 import DocsPage from 'src/pages/docs';
 import SettingPage from 'src/pages/setting';
 
-import CompactLayout from 'src/layouts/compact';
 
+
+import MaintenancePage from 'src/pages/maintenance';
+import CompactLayout from 'src/layouts/compact';
 export const HomePage = lazy(() => import('src/pages/home'));
 const ComingSoonPage = lazy(() => import('src/pages/coming-soon'));
 const ContactPage = lazy(() => import('src/pages/contact-us'));
 const FaqsPage = lazy(() => import('src/pages/faqs'));
+const Page500 = lazy(() => import('src/pages/Error/page500'));
+const Page403 = lazy(() => import('src/pages/Error/page403'));
+const Page404 = lazy(() => import('src/pages/Error/page404'));
+
 
 export const mainRoutes = [
   {
@@ -47,15 +53,35 @@ export const mainRoutes = [
   {
     element: (
       <CompactLayout>
-        <Suspense>
+
+        <Suspense fallback={<>Loading</>}>
+
           <Outlet />
         </Suspense>
       </CompactLayout>
     ),
     children: [
       {
+
         path: 'coming-soon',
         element: <ComingSoonPage />,
+      },
+      {
+        path: 'maintenance',
+        element: <MaintenancePage />,
+      },
+      {
+        path: '500',
+        element: <Page500 />,
+      },
+      {
+        path: '403',
+        element: <Page403 />,
+      },
+      {
+        path: '404',
+        element: <Page404 />,
+
       },
     ],
   },

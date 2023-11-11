@@ -1,3 +1,4 @@
+
 import { Container } from '@mui/material';
 
 import { HeaderSimple } from '../_common';
@@ -28,3 +29,4 @@ export default function CompactLayout({ children }: Props) {
     </>
   );
 }
+
