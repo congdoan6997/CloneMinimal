@@ -1,11 +1,7 @@
-
-
 export default function StepperView() {
   return (
     <>
-      <div>
-      StepperView
-      </div>
+      <div>StepperView</div>
     </>
   );
 }

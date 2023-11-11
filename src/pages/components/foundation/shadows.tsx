@@ -7,9 +7,8 @@ export default function ShadowsPage() {
       <Helmet>
         <title>Foundations: Shadows</title>
       </Helmet>
-      
+
       <ShadowsView />
     </>
   );
 }
-

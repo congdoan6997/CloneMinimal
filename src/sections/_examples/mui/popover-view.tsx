@@ -1,12 +1,7 @@
-
-
 export default function PopoverView() {
-  
   return (
     <>
-      <div>
-      PopoverView
-      </div>
+      <div>PopoverView</div>
     </>
   );
 }

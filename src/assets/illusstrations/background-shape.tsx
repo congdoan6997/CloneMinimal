@@ -24,4 +24,4 @@ function BackgroundShape() {
   return path;
 }
 
-export default memo(BackgroundShape)
+export default memo(BackgroundShape);

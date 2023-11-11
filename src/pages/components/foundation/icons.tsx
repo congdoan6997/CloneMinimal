@@ -7,9 +7,8 @@ export default function IconsPage() {
       <Helmet>
         <title>Foundations: Icons</title>
       </Helmet>
-      
+
       <IconsView />
     </>
   );
 }
-

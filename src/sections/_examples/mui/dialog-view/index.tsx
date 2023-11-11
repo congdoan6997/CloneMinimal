@@ -1,11 +1,7 @@
-
-
 export default function DialogView() {
   return (
     <>
-      <div>
-      DialogView
-      </div>
+      <div>DialogView</div>
     </>
   );
 }

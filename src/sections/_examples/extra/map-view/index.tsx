@@ -1,4 +1,7 @@
-
 export default function MapView() {
-  return <><div>MapView</div></>
+  return (
+    <>
+      <div>MapView</div>
+    </>
+  );
 }

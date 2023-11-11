@@ -1,15 +1,7 @@
-
-
-
-
 export default function MenuView() {
-  
-
   return (
     <>
-      <div>
-      MenuView
-      </div>
+      <div>MenuView</div>
     </>
   );
 }

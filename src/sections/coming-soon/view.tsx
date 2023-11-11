@@ -1,4 +1,3 @@
-
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/system/Box';
@@ -68,4 +67,3 @@ export default function ComingSoonView() {
     </>
   );
 }
-

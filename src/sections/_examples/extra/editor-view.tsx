@@ -1,5 +1,7 @@
-
-
 export default function EditorView() {
-  return <><div>EditorView</div></>
+  return (
+    <>
+      <div>EditorView</div>
+    </>
+  );
 }

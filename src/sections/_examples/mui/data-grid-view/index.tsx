@@ -1,11 +1,7 @@
-
-
 export default function DataGridView() {
   return (
     <>
-      <div>
-      DataGridView
-      </div>
+      <div>DataGridView</div>
     </>
   );
 }

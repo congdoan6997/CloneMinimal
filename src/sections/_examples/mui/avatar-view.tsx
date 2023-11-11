@@ -1,12 +1,7 @@
-
-
 export default function AvatarView() {
- 
   return (
     <>
-     <div>
-     AvatarView
-     </div>
+      <div>AvatarView</div>
     </>
   );
 }

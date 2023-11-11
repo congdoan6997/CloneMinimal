@@ -1,8 +1,7 @@
-import { Box, Container, Stack, Typography} from "@mui/material"
-import {styled, alpha} from "@mui/material/styles"
-import { useResponsive } from "src/hooks"
+import { Box, Container, Stack, Typography } from '@mui/material';
+import { styled, alpha } from '@mui/material/styles';
+import { useResponsive } from 'src/hooks';
 import { bgGradient } from 'src/theme/css';
-
 
 const StyledRoot = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -23,39 +22,37 @@ const StyledBg = styled('div')(({ theme }) => ({
   }),
 }));
 
-
 export default function ComponentHero() {
   const mdUp = useResponsive('up', 'md');
   return (
     <StyledRoot>
-    <Container
-      sx={{
-        display:'flex',
-        justifyContent: 'space-between'
-      }}
-    >
-      <Stack spacing={3}>
-        <Typography variant="h3" component="h1">
-          Components
-        </Typography >
-        
-        <Typography sx={{color: 'text.secondary'}}>
-              With huge resource pack making deployment
-              <br /> easy and expanding more effectively
-        </Typography>
+      <Container
+        sx={{
+          display: 'flex',
+          justifyContent: 'space-between',
+        }}
+      >
+        <Stack spacing={3}>
+          <Typography variant="h3" component="h1">
+            Components
+          </Typography>
 
-      </Stack>
+          <Typography sx={{ color: 'text.secondary' }}>
+            With huge resource pack making deployment
+            <br /> easy and expanding more effectively
+          </Typography>
+        </Stack>
 
-      {mdUp && (
-      <Box
-      component="img"
-      alt="illustrations characters"
-      src="/assets/illustrations/characters/character_7.png"
-      sx={{ }}
-      />
-      )} 
-    </Container>
+        {mdUp && (
+          <Box
+            component="img"
+            alt="illustrations characters"
+            src="/assets/illustrations/characters/character_7.png"
+            sx={{}}
+          />
+        )}
+      </Container>
       <StyledBg />
     </StyledRoot>
-  )
+  );
 }

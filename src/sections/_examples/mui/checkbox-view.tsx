@@ -1,13 +1,7 @@
-
-
 export default function CheckboxView() {
- 
-
   return (
     <>
-     <div>
-     CheckboxView
-     </div>
+      <div>CheckboxView</div>
     </>
   );
 }

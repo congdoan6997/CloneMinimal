@@ -1,5 +1,3 @@
-
-
 import { Link, Toolbar } from '@mui/material';
 import AppBar from '@mui/material/AppBar';
 import Stack from '@mui/system/Stack';
@@ -10,7 +8,6 @@ import SettingsButton from './settings-button';
 import { RouterLink } from 'src/routes/components';
 
 export default function HeaderSimple() {
-
   return (
     <AppBar>
       <Toolbar
@@ -20,7 +17,6 @@ export default function HeaderSimple() {
             xs: HEADER.H_MOBILE,
             md: HEADER.H_DESKTOP,
           },
-
         }}
       >
         <Logo />
@@ -36,4 +32,3 @@ export default function HeaderSimple() {
     </AppBar>
   );
 }
-

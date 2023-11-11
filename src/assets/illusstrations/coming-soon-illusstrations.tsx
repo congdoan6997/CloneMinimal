@@ -115,5 +115,4 @@ function ComingSoonIllustration({ ...other }: BoxProps) {
   );
 }
 
-
 export default memo(ComingSoonIllustration);

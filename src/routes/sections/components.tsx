@@ -1,8 +1,6 @@
-
-import { Suspense, lazy } from "react";
-import { Navigate, Outlet } from "react-router-dom";
-import MainLayout from "src/layouts/main";
-
+import { Suspense, lazy } from 'react';
+import { Navigate, Outlet } from 'react-router-dom';
+import MainLayout from 'src/layouts/main';
 
 //--------------------------------------------------------------------
 const IndexPage = lazy(() => import('src/pages/components'));
@@ -10,7 +8,7 @@ const IndexPage = lazy(() => import('src/pages/components'));
 const ColorsPage = lazy(() => import('src/pages/components/foundation/colors'));
 const TypographyPage = lazy(() => import('src/pages/components/foundation/typography'));
 const ShadowsPage = lazy(() => import('src/pages/components/foundation/shadows'));
-const GridPage = lazy(() => import('src/pages/components/foundation/grid'));
+const GridPage = lazy(() => import('src/pages/components/foundation/grids'));
 const IconsPage = lazy(() => import('src/pages/components/foundation/icons'));
 
 // MUI COMPONENTS
@@ -65,8 +63,6 @@ const UploadPage = lazy(() => import('src/pages/components/extra/upload'));
 const MarkdownPage = lazy(() => import('src/pages/components/extra/markdown'));
 const ScrollProgressPage = lazy(() => import('src/pages/components/extra/scroll-progress'));
 
-
-
 export const componentsRoutes = [
   {
     element: (
@@ -91,7 +87,7 @@ export const componentsRoutes = [
               { path: 'colors', element: <ColorsPage /> },
               { path: 'typography', element: <TypographyPage /> },
               { path: 'shadows', element: <ShadowsPage /> },
-              { path: 'grid', element: <GridPage /> },
+              { path: 'grids', element: <GridPage /> },
               { path: 'icons', element: <IconsPage /> },
             ],
           },

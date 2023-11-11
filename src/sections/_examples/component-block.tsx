@@ -1,4 +1,3 @@
-
 // @mui
 import { Theme, alpha, SxProps } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
@@ -43,4 +42,3 @@ export default function ComponentBlock({ title, sx, children, ...other }: BlockP
     </Paper>
   );
 }
-

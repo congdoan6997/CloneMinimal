@@ -1,13 +1,7 @@
-
-
 export default function RatingView() {
-  
   return (
     <>
-      <div>
-      RatingView
-      </div>
+      <div>RatingView</div>
     </>
   );
 }
-

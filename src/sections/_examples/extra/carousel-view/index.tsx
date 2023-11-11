@@ -1,5 +1,7 @@
-
-
 export default function CarouselView() {
-  return <><div>CarouselView</div></>
+  return (
+    <>
+      <div>CarouselView</div>
+    </>
+  );
 }

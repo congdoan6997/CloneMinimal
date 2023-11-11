@@ -1,10 +1,3 @@
-
-
 export default function PaginationView() {
-  
-  return (
-    <>
-      PaginationView
-    </>
-  );
+  return <>PaginationView</>;
 }
