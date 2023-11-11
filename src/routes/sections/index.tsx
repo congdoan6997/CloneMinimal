@@ -16,7 +16,9 @@ export default function SimpleLayout() {
     },
     //Main routes
     ...mainRoutes,
+
     //Components routes
+
     ...componentsRoutes,
   ]);
 }

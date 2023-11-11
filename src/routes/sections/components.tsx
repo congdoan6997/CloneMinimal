@@ -1,3 +1,4 @@
+
 import { Suspense, lazy } from "react";
 import { Navigate, Outlet } from "react-router-dom";
 import MainLayout from "src/layouts/main";
@@ -63,6 +64,7 @@ const TextMaxLinePage = lazy(() => import('src/pages/components/extra/text-max-l
 const UploadPage = lazy(() => import('src/pages/components/extra/upload'));
 const MarkdownPage = lazy(() => import('src/pages/components/extra/markdown'));
 const ScrollProgressPage = lazy(() => import('src/pages/components/extra/scroll-progress'));
+
 
 
 export const componentsRoutes = [

@@ -1,7 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { ShadowsView } from 'src/sections/_examples/foundation';
 
-
 export default function ShadowsPage() {
   return (
     <>
@@ -13,3 +12,4 @@ export default function ShadowsPage() {
     </>
   );
 }
+

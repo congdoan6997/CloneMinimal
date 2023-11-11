@@ -4,7 +4,7 @@ const ROOTS = {
 
 export const paths = {
   components: '/components',
-  docs: 'docs',
+  docs: '/docs',
   about: '/about-us',
   contact: '/contact-us',
   faqs: '/faqs',
