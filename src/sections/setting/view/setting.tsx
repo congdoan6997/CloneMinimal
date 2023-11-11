@@ -1,5 +1,3 @@
 export default function setting() {
-   return(
-      <>Setting</>
-   )
-};
+  return <>Setting</>;
+}
