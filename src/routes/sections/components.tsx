@@ -5,6 +5,7 @@ import MainLayout from 'src/layouts/main/layout';
 //foundation
 const ColorsPage = lazy(() => import('src/pages/components/foundation/colors'));
 const TypographyPage = lazy(() => import('src/pages/components/foundation/typography'));
+const ShadowsPage = lazy(() => import('src/pages/components/foundation/shadows'));
 export const componentsRoutes = [
   {
     element: (
@@ -29,6 +30,10 @@ export const componentsRoutes = [
               {
                 path: 'typography',
                 element: <TypographyPage />,
+              },
+              {
+                path: 'shadows',
+                element: <ShadowsPage></ShadowsPage>,
               },
             ],
           },
