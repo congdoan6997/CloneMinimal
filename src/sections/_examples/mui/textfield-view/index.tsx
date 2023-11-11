@@ -6,7 +6,7 @@ export default function TextfieldView() {
  
   return (
     <>
-      <div> TextfieldView</div>
+      <div>TextfieldView</div>
     </>
   );
 }
