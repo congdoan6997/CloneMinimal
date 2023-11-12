@@ -21,6 +21,7 @@ export const muiNav = [
   'Buttons',
   'Checkbox',
   'Chip',
+  'Data Grid',
   'Dialog',
   'List',
   'Menu',
