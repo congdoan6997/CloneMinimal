@@ -26,7 +26,7 @@ export default function ThemeProvider({ children }: Props) {
 
   const memoizedValue = useMemo(() => merge(baseOption), [baseOption]);
   const theme = createTheme(memoizedValue as ThemeOptions);
-  theme.components = componentsOverrides(theme);
+  theme.components = merge(componentsOverrides(theme));
   const themeWithLocale = useMemo(() => createTheme(theme), [theme]);
   return (
     <MuiThemeProvider theme={themeWithLocale}>

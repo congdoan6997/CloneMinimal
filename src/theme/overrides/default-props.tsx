@@ -7,5 +7,10 @@ export function defaultProps(theme: Theme) {
         color: 'transparent',
       },
     },
+    MuiAvatarGroup: {
+      defaultProps: {
+        max: 4,
+      },
+    }
   };
 }

@@ -3,7 +3,7 @@ import { BreadcrumbsProps } from '@mui/material';
 export type BreadcrumbsLinkProps = {
   name?: string;
   href?: string;
-  icon?: string;
+  icon?: React.ReactNode;
 };
 
 export interface CustomBreadcrumbsProps extends BreadcrumbsProps {
