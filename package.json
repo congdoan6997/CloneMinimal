@@ -29,6 +29,7 @@
     "date-fns": "^2.30.0",
     "eslint-config-airbnb-typescript": "^17.1.0",
     "framer-motion": "^10.16.2",
+    "numeral": "^2.0.6",
     "prettier": "^3.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -40,6 +41,7 @@
   },
   "devDependencies": {
     "@iconify/react": "^4.1.1",
+    "@types/numeral": "^2.0.5",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "@types/react-lazy-load-image-component": "^1.6.2",

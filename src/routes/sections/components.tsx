@@ -87,7 +87,7 @@ export const componentsRoutes = [
               { path: 'colors', element: <ColorsPage /> },
               { path: 'typography', element: <TypographyPage /> },
               { path: 'shadows', element: <ShadowsPage /> },
-              { path: 'grids', element: <GridPage /> },
+              { path: 'grid', element: <GridPage /> },
               { path: 'icons', element: <IconsPage /> },
             ],
           },
