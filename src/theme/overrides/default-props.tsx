@@ -11,6 +11,6 @@ export function defaultProps(theme: Theme) {
       defaultProps: {
         max: 4,
       },
-    }
+    },
   };
 }
