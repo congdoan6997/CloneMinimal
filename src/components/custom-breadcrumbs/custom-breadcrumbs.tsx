@@ -72,7 +72,7 @@ function Separator() {
         height: 4,
         borderRadius: '50%',
         bgcolor: 'text.disabled',
-        mb: 1,
+        my: 1,
       }}
     ></Box>
   );
