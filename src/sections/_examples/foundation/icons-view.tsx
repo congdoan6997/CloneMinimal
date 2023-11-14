@@ -40,7 +40,7 @@ export default function IconsView() {
             </Link>
           </ComponentBlock>
 
-          <ComponentBlock title="Iconify Icons" spacing={3}>
+          <ComponentBlock title="Iconify Icons">
             <Tooltip title="Iconify">
               <Iconify icon="eva:color-palette-fill" width={24} />
             </Tooltip>
@@ -54,7 +54,7 @@ export default function IconsView() {
             <Iconify icon="eva:color-palette-fill" width={24} sx={{ color: 'error.main' }} />
           </ComponentBlock>
 
-          <ComponentBlock title="Local Icons" spacing={3}>
+          <ComponentBlock title="Local Icons">
             <Tooltip title="SvgColor">
               <SvgColor src="/assets/icons/navbar/ic_dashboard.svg" />
             </Tooltip>

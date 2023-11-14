@@ -25,7 +25,7 @@ export default function ComponentBlock({ title, sx, children, ...other }: BlockP
       {title && <CardHeader title={title} />}
 
       <Stack
-        // spacing={3}
+        spacing={3}
         direction="row"
         alignItems="center"
         justifyContent="center"
