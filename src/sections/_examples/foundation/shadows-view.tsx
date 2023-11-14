@@ -37,19 +37,19 @@ export default function ShadowsView() {
 
       <Container sx={{ my: 10 }}>
         <Stack spacing={5}>
-          <ComponentBlock title="System">
+          <ComponentBlock title="System" spacing={0}>
             {systemShadows.map((item, index) => (
               <CardShadow key={index} title={`z${index + 1}`} sx={{ boxShadow: item }} />
             ))}
           </ComponentBlock>
 
-          <ComponentBlock title="Customs">
+          <ComponentBlock title="Customs" spacing={0}>
             {customShadows.map((item, index) => (
               <CardShadow key={index} title={item[0]} sx={{ boxShadow: item[1] }} />
             ))}
           </ComponentBlock>
 
-          <ComponentBlock title="Colors">
+          <ComponentBlock title="Colors" spacing={0}>
             {colors.map((item, index) => (
               <CardShadow
                 key={index}

@@ -44,13 +44,13 @@ export default function AvatarView() {
 
       <Container sx={{ my: 10 }}>
         <Masonry columns={{ xs: 1, md: 2 }} spacing={3}>
-          <ComponentBlock title="Image" spacing={3}>
+          <ComponentBlock title="Image">
             {[1, 2, 3, 4, 5].map((item) => (
               <Avatar key={item} alt="Avatar" src="/assets/images/avatar/avatar_2.jpg" />
             ))}
           </ComponentBlock>
 
-          <ComponentBlock title="Letter" spacing={3}>
+          <ComponentBlock title="Letter">
             {Colors.map((color) => (
               <Tooltip title={color} key={color}>
                 <Avatar
@@ -62,7 +62,7 @@ export default function AvatarView() {
             ))}
           </ComponentBlock>
 
-          <ComponentBlock title="Icon" spacing={3}>
+          <ComponentBlock title="Icon">
             {Colors.map((color) => (
               <Avatar
                 key={color}
@@ -73,7 +73,7 @@ export default function AvatarView() {
             ))}
           </ComponentBlock>
 
-          <ComponentBlock title="Variant" spacing={3}>
+          <ComponentBlock title="Variant">
             {Variants.map((variant) => (
               <Avatar key={variant} variant={variant} sx={{ bgcolor: 'primary.main' }}>
                 <Iconify icon="eva:folder-add-outline" />
@@ -112,7 +112,7 @@ export default function AvatarView() {
             </Stack>
           </ComponentBlock>
 
-          <ComponentBlock spacing={3}>
+          <ComponentBlock>
             <Badge
               overlap="circular"
               anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
@@ -141,7 +141,7 @@ export default function AvatarView() {
             ))}
           </ComponentBlock>
 
-          <ComponentBlock spacing={3}>
+          <ComponentBlock>
             {Size2.map((size) => (
               <Avatar
                 key={size}

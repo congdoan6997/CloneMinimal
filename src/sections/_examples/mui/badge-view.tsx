@@ -38,7 +38,7 @@ export default function BadgeView() {
 
       <Container sx={{ my: 10 }}>
         <Masonry columns={{ xs: 1, md: 2 }} spacing={3}>
-          <ComponentBlock title="Basic" spacing={3}>
+          <ComponentBlock title="Basic">
             {COLORS.map((color) => (
               <Badge key={color} color={color} badgeContent={4}>
                 <Iconify icon="fluent:mail-24-filled" width={24} />
@@ -46,7 +46,7 @@ export default function BadgeView() {
             ))}
           </ComponentBlock>
 
-          <ComponentBlock title="Maximum Value" spacing={3}>
+          <ComponentBlock title="Maximum Value">
             <Badge color="error" badgeContent={99}>
               <Iconify icon="fluent:mail-24-filled" width={24} />
             </Badge>
@@ -59,7 +59,7 @@ export default function BadgeView() {
             </Badge>
           </ComponentBlock>
 
-          <ComponentBlock title="Dot badge" spacing={3}>
+          <ComponentBlock title="Dot badge">
             <Badge variant="dot" color="info">
               <Iconify icon="fluent:mail-24-filled" width={24} />
             </Badge>
@@ -69,7 +69,7 @@ export default function BadgeView() {
             </Badge>
           </ComponentBlock>
 
-          <ComponentBlock title="Badge overlap" spacing={3}>
+          <ComponentBlock title="Badge overlap">
             <Badge color="info" badgeContent=" ">
               <Box sx={{ width: 40, height: 40, bgcolor: 'warning.main' }}></Box>
             </Badge>
@@ -83,7 +83,7 @@ export default function BadgeView() {
               <Box sx={{ width: 40, height: 40, bgcolor: 'warning.main', borderRadius: '50%' }} />
             </Badge>
           </ComponentBlock>
-          <ComponentBlock title="Status" spacing={3}>
+          <ComponentBlock title="Status">
             {STATUS.map((status) => (
               <Badge
                 key={status}
