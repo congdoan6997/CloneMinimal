@@ -22,5 +22,11 @@ export function defaultProps(theme: Theme) {
         },
       },
     },
+    MuiButton: {
+      defaultProps: {
+        color: 'inherit',
+        disableElevation: true,
+      },
+    },
   };
 }

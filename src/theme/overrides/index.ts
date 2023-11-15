@@ -6,6 +6,8 @@ import { badge } from './components/badge';
 import { dialog } from './components/dialog';
 import list from './components/list';
 import { switches } from './components/switch';
+import { button } from './components/button';
+import { popover } from './components/popover';
 
 export function componentsOverrides(theme: Theme) {
   const components = merge(
@@ -14,7 +16,9 @@ export function componentsOverrides(theme: Theme) {
     badge(theme),
     dialog(theme),
     list(theme),
-    switches(theme)
+    switches(theme),
+    button(theme),
+    popover(theme)
   );
   return components;
 }
