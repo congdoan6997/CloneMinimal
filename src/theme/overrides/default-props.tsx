@@ -12,5 +12,15 @@ export function defaultProps(theme: Theme) {
         max: 4,
       },
     },
+    MuiListItemText: {
+      defaultProps: {
+        primaryTypographyProps: {
+          typography: 'subtitle2',
+        },
+        secondaryTypographyProps: {
+          component: 'span',
+        },
+      },
+    },
   };
 }

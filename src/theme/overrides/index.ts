@@ -4,8 +4,17 @@ import merge from 'lodash.merge';
 import { avatar } from './components/avatar';
 import { badge } from './components/badge';
 import { dialog } from './components/dialog';
+import list from './components/list';
+import { switches } from './components/switch';
 
 export function componentsOverrides(theme: Theme) {
-  const components = merge(defaultProps(theme), avatar(theme), badge(theme), dialog(theme));
+  const components = merge(
+    defaultProps(theme),
+    avatar(theme),
+    badge(theme),
+    dialog(theme),
+    list(theme),
+    switches(theme)
+  );
   return components;
 }
