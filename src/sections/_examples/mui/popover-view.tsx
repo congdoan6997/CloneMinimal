@@ -57,6 +57,7 @@ export default function PopoverView() {
             xs: 'repeat(1, 1fr)',
             md: 'repeat(2, 1fr)',
           }}
+          sx={{ mb: 3 }}
         >
           <ComponentBlock title="Click">
             <Button onClick={clickPopover.onOpen} variant="contained">
