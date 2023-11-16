@@ -28,5 +28,10 @@ export function defaultProps(theme: Theme) {
         disableElevation: true,
       },
     },
+    MuiStack: {
+      defaultProps: {
+        useFlexGap: true,
+      },
+    },
   };
 }
