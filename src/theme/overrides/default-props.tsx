@@ -33,5 +33,12 @@ export function defaultProps(theme: Theme) {
         useFlexGap: true,
       },
     },
+    MuiTabs: {
+      defaultProps: {
+        textColor: 'inherit',
+        variant: 'scrollable',
+        allowScrollButtonsMobile: true,
+      },
+    },
   };
 }
