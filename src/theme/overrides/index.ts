@@ -8,6 +8,7 @@ import list from './components/list';
 import { switches } from './components/switch';
 import { button } from './components/button';
 import { popover } from './components/popover';
+import { tabs } from './components/tabs';
 
 export function componentsOverrides(theme: Theme) {
   const components = merge(
@@ -18,7 +19,8 @@ export function componentsOverrides(theme: Theme) {
     list(theme),
     switches(theme),
     button(theme),
-    popover(theme)
+    popover(theme),
+    tabs(theme)
   );
   return components;
 }
